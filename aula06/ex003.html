@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body {
+            background-color: #5f5fbbe0;
+            color: white;
+            font: normal 14pt arial;
+        }
+
+        h1 {
+            color: rgba(255, 255, 0, 0.5);
+        }
+
+        /* Isso é um comentario..*/
+
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!-- Isso é um comentario em html-->
+    <p>Já me livrei da maldição.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, itaque debitis nulla ratione recusandae, tempora velit magni laudantium doloremque aperiam, natus aut porro! Voluptatibus explicabo eaque aut rem! Quae, rerum.</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2 
+        window.alert('A soma dos valores é ' + String(s)) // concatenação
+
+        // o ultimo window.alert vai nos dar a resposta de 12, por causa do seguinte:
+
+        // (number + number) para adição
+        // (string + string) para concatenação
+
+        // o window prompt ele retorna sempre uma string, mesmo que digite um numero!
+    </script>
+</body>
+</html> 
