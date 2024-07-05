@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão de Pessoas</title>
+</head>
+<body>
+    <h1>Sistema de Gestão de Pessoas</h1>
+    Qual é o seu país: <input type="text" name="pais" id="p">
+    <input type="button" value="Confirmar" onclick="confirm()">
+    <div id="res">
+        
+    </div>
+
+    <script>
+        function confirm() {
+            var pais = window.document.querySelector('input#p')
+            var res = window.document.querySelector('div#res')
+            var t = String(pais.value)
+            res.innerHTML = `<p>Voce é de ${t}</p>`
+            if (t == 'Brasil') {
+                res.innerHTML += `Voce é Brasileiro!`
+            } else {
+                res.innerHTML += `Voce é Estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
