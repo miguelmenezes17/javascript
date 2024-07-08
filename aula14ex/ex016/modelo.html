@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de exercicio</title>
+    <title>Vamos contar</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Vamos Contar</h1>
     </header>
     <section>
-        <div>TESTANDO</div>
-        <div>TESTANDO</div>
+        <div id="dados">
+            <p>Início: 
+                <input type="number" name="inicio" id="inicio">
+            </p>
+            <p>Fim: 
+                <input type="number" name="fim" id="fim">
+            </p>
+            <p>Passo: 
+                <input type="number" name="passo" id="passo">
+            </p>
+            <p>
+                <input type="button" value="Contar" onclick="contar()">
+            </p>
+        </div>
+        <div id="res">
+            Preparando a contagem....
+        </div>
     </section>
     <footer>
         <p>&copy; CursoemVideo</p>
